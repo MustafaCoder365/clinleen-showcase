@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>كلين لين — منصة إدارة عيادات الأسنان</title>
+<meta name="description" content="ClinLeen: منصة SaaS لإدارة عيادات الأسنان — مرضى، مواعيد، مخطط أسنان، فواتير، مخزون ومختبرات." />
+<meta property="og:title" content="ClinLeen — Dental clinic management platform" />
+<meta property="og:image" content="screens/hero.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg:#f6f9fc; --ink:#0f172a; --muted:#64748b; --card:#fff; --line:#e2e8f0; --teal:#0d9488; --blue:#1d4ed8; }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: Cairo, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.7; }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+  header.hero { background: radial-gradient(circle at 10% 0%, #10b98140, transparent 45%), radial-gradient(circle at 95% 100%, #1d4ed850, transparent 50%), #0a1224; color: #fff; padding: 72px 0 40px; overflow: hidden; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 22px; }
+  .brand span { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, var(--teal), var(--blue)); }
+  h1 { font-size: clamp(34px, 6vw, 64px); line-height: 1.2; margin-top: 28px; max-width: 16ch; }
+  .lead { color: #cbd5e1; font-size: clamp(16px, 2vw, 20px); margin-top: 14px; max-width: 56ch; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .chip { border: 1px solid #ffffff2e; background: #ffffff10; padding: 4px 14px; border-radius: 999px; font-size: 14px; }
+  .shot { margin-top: 44px; border-radius: 18px; overflow: hidden; box-shadow: 0 40px 80px -30px #000; }
+  section { padding: 72px 0; }
+  h2 { font-size: clamp(26px, 4vw, 40px); }
+  .sub { color: var(--muted); margin-top: 6px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); margin-top: 28px; }
+  .f { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+  .f b { display: block; font-size: 18px; margin-bottom: 4px; }
+  .f p { color: var(--muted); font-size: 15px; }
+  .feature { margin-top: 48px; }
+  .feature h3 { font-size: 24px; }
+  .feature img { margin-top: 16px; border-radius: 16px; box-shadow: 0 30px 60px -30px #0f172a80; }
+  .gallery { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); margin-top: 28px; }
+  .gallery figure { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .gallery figcaption { padding: 10px 14px; font-weight: 600; }
+  .note { background: #0f172a; color: #e2e8f0; border-radius: 18px; padding: 22px 24px; margin-top: 28px; }
+  footer { border-top: 1px solid var(--line); padding: 36px 0 48px; text-align: center; color: var(--muted); }
+  footer a { color: var(--blue); font-weight: 700; text-decoration: none; }
+  @media (max-width: 600px) { header.hero { padding-top: 48px; } section { padding: 52px 0; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span>🦷</span> كلين لين · ClinLeen</div>
+    <h1>كل عيادة الأسنان، من شاشة وحدة</h1>
+    <p class="lead">منصة SaaS لعيادات الأسنان: المرضى، المواعيد، مخطط الأسنان التفاعلي، الفواتير والأقساط، المخزون والمختبرات — بالعربي والإنكليزي، ولأكثر من فرع.</p>
+    <div class="chips">
+      <span class="chip">Next.js 14</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL</span><span class="chip">Prisma</span><span class="chip">NextAuth</span><span class="chip">Tailwind CSS</span><span class="chip">PWA</span>
+    </div>
+    <img class="shot" src="screens/hero.jpg" alt="لوحة تحكم كلين لين على الحاسوب والموبايل" />
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>شنو يسوي؟</h2>
+      <p class="sub">كل عيادة حساب معزول بالكامل، بفروعها وكادرها وبياناتها.</p>
+      <div class="grid">
+        <div class="f"><b>🦷 مخطط أسنان تفاعلي</b><p>ترقيم FDI للأسنان الدائمة واللبنية، حالة كل سطح، وتاريخ علاج كل سن.</p></div>
+        <div class="f"><b>📅 مواعيد وغرفة انتظار</b><p>حجز من اللوحة أو صفحة عامة، حالات الموعد، منع التعارض، وطابور الانتظار المباشر.</p></div>
+        <div class="f"><b>📋 ملف مريض كامل</b><p>تاريخ طبي، زيارات، خطط علاج، وصفات، موافقات، تجميل وليزر، صور ومختبر.</p></div>
+        <div class="f"><b>💳 فواتير وأقساط</b><p>بنود وخصومات، دفعات جزئية، وطرق دفع محلية: زين كاش، كي كارد، فاست باي.</p></div>
+        <div class="f"><b>💰 صندوق ومصروفات</b><p>جلسات صندوق يومية لكل فرع، مصروفات بالفئات، وتقارير مالية مع تصدير CSV.</p></div>
+        <div class="f"><b>📦 مخزون ومختبرات</b><p>دفعات وصلاحية، تنبيهات الرصيد المنخفض، موردون، أوامر شراء، وأوامر مختبر.</p></div>
+        <div class="f"><b>🔐 أدوار وصلاحيات</b><p>مالك منصة، مدير عيادة، طبيب، استقبال — بصلاحيات دقيقة وسجل تدقيق.</p></div>
+        <div class="f"><b>🌍 عربي وإنكليزي</b><p>واجهة كاملة من اليمين لليسار ومن اليسار لليمين، وتنزل على الموبايل كتطبيق.</p></div>
+      </div>
+
+      <div class="feature"><h3>مخطط الأسنان</h3><img src="screens/dental-chart.jpg" alt="مخطط الأسنان" loading="lazy" /></div>
+      <div class="feature"><h3>المواعيد</h3><img src="screens/appointments.jpg" alt="المواعيد" loading="lazy" /></div>
+      <div class="feature"><h3>غرفة الانتظار</h3><img src="screens/waiting-room.jpg" alt="غرفة الانتظار" loading="lazy" /></div>
+      <div class="feature"><h3>صفحة الحجز للمرضى</h3><img src="screens/booking.jpg" alt="صفحة الحجز العامة" loading="lazy" /></div>
+      <div class="feature"><h3>English</h3><img src="screens/english.jpg" alt="English interface" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <section style="background:#fff;border-top:1px solid var(--line)">
+    <div class="wrap">
+      <h2>شاشات أكثر</h2>
+      <div class="gallery">
+        <figure><img src="screens/patients.jpg" alt="" loading="lazy" /><figcaption>المرضى</figcaption></figure>
+        <figure><img src="screens/patient.jpg" alt="" loading="lazy" /><figcaption>ملف المريض</figcaption></figure>
+        <figure><img src="screens/billing.jpg" alt="" loading="lazy" /><figcaption>الفوترة</figcaption></figure>
+        <figure><img src="screens/reports.jpg" alt="" loading="lazy" /><figcaption>التقارير المالية</figcaption></figure>
+        <figure><img src="screens/inventory.jpg" alt="" loading="lazy" /><figcaption>المخزون</figcaption></figure>
+        <figure><img src="screens/labs.jpg" alt="" loading="lazy" /><figcaption>المختبرات</figcaption></figure>
+        <figure><img src="screens/cash.jpg" alt="" loading="lazy" /><figcaption>الصندوق اليومي</figcaption></figure>
+        <figure><img src="screens/services.jpg" alt="" loading="lazy" /><figcaption>الخدمات والأسعار</figcaption></figure>
+        <figure><img src="screens/staff.jpg" alt="" loading="lazy" /><figcaption>الكادر</figcaption></figure>
+      </div>
+      <p class="note">🔒 الكود المصدري خاص لأن كلين لين منتج تجاري. الشاشات من التطبيق الحقيقي ببيانات تجريبية.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    صمّمه وطوّره <a href="https://github.com/MustafaCoder365">مصطفى شاكر</a> · <a href="mailto:mustafa1997670@gmail.com">تواصل للتجربة</a>
+  </div>
+</footer>
+</body>
+</html>
